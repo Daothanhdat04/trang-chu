@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Cảnh đẹp và Ẩm thực Việt Nam</title>
+    <link rel="stylesheet" href="styles.css"> <!-- liên kết css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Protest+Guerrilla&display=swap" rel="stylesheet"> <!-- liên kết font chữ tiêu đề -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+    <header>  
+<!-- LƯU MINH HIẾU -->           
+            <div class="advanced-search-container">
+<!-- Thanh tìm kiếm và nút -->
+            <input type="text" id="keyword-input" class="search-input" placeholder="Tìm kiếm địa điểm, món ăn, từ khóa...">
+            <button class="search-button" onclick="advancedSearch()">Tìm kiếm</button>
+        
+            </div>
+                <div class="button-container">
+                <button class="home-button">
+                    <i class="fas fa-home"></i> Trang Chủ
+                </button>   
+                
+<!-- Bộ lọc theo vùng miền -->
+<div class="filter-region">
+    <div class="dropdown">
+        <a href="#" class="region-filter-item">Tất cả vùng miền <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+            <a href="https://daothanhdat04.github.io/MIENBAC/">Miền Bắc</a>
+            <a href="https://daothanhdat04.github.io/MIENTRUNG/">Miền Trung</a>
+            <a href="https://daothanhdat04.github.io/MIENNAM/">Miền Nam</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bộ lọc dịch vụ -->
+<div class="filter-service">
+    <div class="dropdown">
+        <a href="#" class="service-filter-item">Tất cả dịch vụ <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+            <a href="https://khanh004.github.io/web/bookingtour.html">Tour du lịch</a>
+            <a href="https://khanh004.github.io/web/bookingcar.html">Đặt xe</a>
+        </div>
+    </div>
+</div>
+</div>
+            
+   
+<!--ĐÀO THÀNH ĐẠT-->
+        <h1>VIỆT NAM TRAVEL</h1>        
+        <div class="intro"> 
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2l2.45 7.6h8.05l-6.5 4.8 2.45 7.6-6.5-4.8-6.5 4.8 2.45-7.6-6.5-4.8h8.05z"/>
+            </svg>
+        </div>
+            <div class="banner">
+               
+                
+            <div class="slides">
+                <img src="https://www.travelvietnam.com/images/travelvietnam/nice_landscape_halong_bay_vietnam.jpg" alt="Cảnh đẹp Miền Bắc" class="slide">
+                <img src="https://www.travelvietnam.com/images/travelvietnam/nice_landscape_ninh_binh_vietnam.jpg" srcset="image-retina.jpg 3x" alt="Ẩm thực Miền Trung" class="slide">
+                <img src="https://www.travelvietnam.com/images/travelvietnam/woman_preparing_cooking_class_hoi_an_vietnam.jpg" alt="Cảnh đẹp Miền Nam" class="slide">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="regions">
+            <div class="region" id="north"> <!-- Gắn thẻ "region" dẫn đến link bằng id -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnWLN3fXqxZes-8enn1HLbxZ9E4b8EkvufrA&ss" class="region" alt="Miền Bắc">
+                <a href="https://khanh004.github.io/web/baitaplon.html" class="learn-more">Miền Bắc</a>
+            </div>
+            <div class="region" id="central">
+                <img src="https://static.vinwonders.com/2022/07/du-lich-mien-trung-14.jpg" class="region" alt="Miền Trung">
+                <a href="https://khanh004.github.io/web/mientrung.html" class="learn-more">Miền Trung</a>
+            </div>
+            <div class="region" id="south">
+                <img src="https://dulichao.net/wp-content/uploads/2018/12/chia-se-kinh-nghiem-du-lich-mien-nam.jpg" class="region" alt="Miền Nam">
+                <a href="https://khanh004.github.io/web/miennam.html" class="learn-more">Miền Nam</a>
+            </div>
+        </section>
+    </main>
+    <div>
+        <h2 style="margin-left:350px;font-family:Arial, Helvetica, sans-serif;font-size:40px;" >Giới thiệu</h2>
+        <p>Việt Nam, một quốc gia nằm ở Đông Nam Á, nổi bật với sự kết hợp hài hòa giữa vẻ đẹp tự nhiên, di sản văn hóa phong phú và nền ẩm thực đa dạng. Từ những bãi biển dài cát trắng của Nha Trang và Phú Quốc đến các dãy núi hùng vĩ của Hà Giang và Sapa, thiên nhiên Việt Nam đem đến cho du khách những trải nghiệm đáng nhớ.</p>
+        <br>
+        <p>Hà Nội, thủ đô ngàn năm văn hiến, mang trong mình vẻ đẹp của những con phố cổ kính và di tích lịch sử. Trong khi đó, Thành phố Hồ Chí Minh, trái tim kinh tế của đất nước, là nơi giao thoa giữa nhịp sống hiện đại và truyền thống.</p>
+        <br>
+        <p>Ẩm thực Việt Nam, với những món ăn đặc trưng như phở, bánh mì, và gỏi cuốn, là một phần không thể thiếu trong hành trình khám phá văn hóa của quốc gia </p>
+        <br>
+        <p>Người Việt Nam nổi tiếng với sự hiếu khách và thân thiện, luôn sẵn sàng chào đón du khách bằng nụ cười ấm áp và sự chân thành. Việt Nam không chỉ là một điểm đến du lịch hấp dẫn mà còn là nơi lưu giữ những giá trị văn hóa và lịch sử độc đáo.</p>
+
+        <h2 style="margin-left:350px;font-family:Arial, Helvetica, sans-serif;font-size:40px;" >Ẩm Thực</h2>
+       <div class="link">
+        <img src="https://image.baophapluat.vn/w840/Uploaded/2024/athlrainaghat/2023_06_11/14b-3366.png" style="margin-left: 350px" alt="Ẩm thực Việt Nam"></div>
+        <p>Ẩm thực Việt Nam được biết đến với sự phong phú và tinh tế, phản ánh sự đa dạng về văn hóa và lịch sử của đất nước. Các món ăn truyền thống của Việt Nam thường kết hợp hài hòa giữa các hương vị ngọt, chua, cay và mặn, tạo nên những trải nghiệm ẩm thực độc đáo và đầy màu sắc.</p>  
+        <br>
+        <p>Phở là một trong những món ăn đặc trưng nhất của Việt Nam. Đây là món súp truyền thống với nước dùng trong, hương vị đậm đà từ xương hầm và các gia vị như quế, hồi và thảo quả. Phở thường được ăn kèm với các loại thịt như bò hoặc gà, rau thơm, và bánh phở mềm mịn, tạo nên một bữa ăn sáng phổ biến và yêu thích.</P>
+        <br>
+        <p>Bún chả là món ăn nổi tiếng khác, đặc biệt ở Hà Nội. Món ăn này bao gồm những miếng thịt heo nướng thơm ngon, được phục vụ cùng với bún, rau sống và nước mắm chua ngọt. Sự kết hợp giữa thịt nướng và nước mắm tạo nên hương vị đặc trưng, hấp dẫn.</p>
+        <br>
+        <p>Bánh xèo, một loại bánh chiên giòn với nhân thịt, tôm và giá đỗ, là món ăn phổ biến ở miền Nam. Bánh xèo thường được ăn kèm với rau sống và nước chấm, mang đến sự hòa quyện hoàn hảo giữa lớp vỏ giòn rụm và nhân tươi ngon.</p>
+        <br>
+        <p>Ẩm thực Việt Nam không chỉ nổi bật với các món ăn chính mà còn với các món ăn nhẹ như nem cuốn và chè. Nem cuốn là những cuộn bánh tráng nhồi thịt, rau và bún, thường được ăn kèm với nước chấm. Chè, một loại món tráng miệng, có nhiều biến thể với các nguyên liệu như đậu xanh, sữa dừa và trái cây.</p>
+        <br>
+        <h2 style="margin-left:350px;font-family:Arial, Helvetica, sans-serif;font-size:40px;">Phong Cảnh</h2>
+        <img src="https://vnpay.vn/s1/statics.vnpay.vn/2023/11/0d79ij9ruoja1698812184967.jpg" style="margin-left: 350px" alt="Phong cảnh Việt Nam"> 
+        <br>  
+        <br>
+        <p>Phong cảnh Việt Nam tuyệt đẹp và đa dạng, từ những cánh đồng xanh mướt ở miền Tây đến các dãy núi hùng vĩ của miền Bắc. Hạ Long Bay nổi bật với hàng nghìn đảo đá vôi kỳ vĩ, trong khi thành phố Đà Lạt quyến rũ với khí hậu mát mẻ và hoa cỏ rực rỡ. Vẻ đẹp của những bãi biển dài cát trắng như Nha Trang và Phú Quốc, kết hợp với các di tích lịch sử và văn hóa phong phú, tạo nên một bức tranh phong cảnh hấp dẫn, mời gọi du khách khám phá.</p>
+        <br>
+        <p>Việt Nam nổi bật với phong cảnh thiên nhiên đa dạng và hùng vĩ. Từ những cánh đồng xanh mướt ở miền Tây, qua các dãy núi cao hùng vĩ ở miền Bắc như dãy Hoàng Liên Sơn, đến những bãi biển dài cát trắng của miền Trung và miền Nam như Nha Trang và Phú Quốc. Vịnh Hạ Long với hàng nghìn đảo đá vôi kỳ vĩ, bao quanh bởi nước biển xanh biếc, tạo nên một cảnh quan tuyệt đẹp và huyền bí. Thành phố Đà Lạt, với khí hậu mát mẻ và những vườn hoa rực rỡ, mang đến một cảm giác thanh bình và dễ chịu. Mỗi vùng đất của Việt Nam đều mang một vẻ đẹp riêng, làm say lòng du khách và tạo nên bức tranh phong cảnh phong phú và cuốn hút.</p>
+        <br>  
+    </div> 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Giới thiệu Cảnh đẹp và Ẩm thực Việt Nam. Tất cả quyền được bảo lưu.</p>
+            
+            <div class="footer-info">
+                <p>Địa chỉ: 98 phố Dương Quảng Hàm, Quan Hoa, Cầu Giấy, Hà Nội</p>
+                <p>Điện thoại: +84 123 456 789</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="scripts.js"></script> <!--liên kết js-->
+</body>
+</html>
